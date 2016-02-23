@@ -1,0 +1,3 @@
+my_route:
+    path: /
+    defaults: { _controller: testMyBundle:Advert:index }
