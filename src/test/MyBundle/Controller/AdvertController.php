@@ -6,8 +6,11 @@
 	
 	class AdvertController extends Controller {
 		public function indexAction() {
-			$content = $this->render("testMyBundle:Advert:index.html.twig");
-			return new Response($content);
+			return $this->render('testMyBundle:Advert:index.html.twig');
+		}
+		
+		public function helloAction($nom) {
+			return $this->render('testMyBundle:Advert:hello.html.twig', array('nom' => $nom));
 		}
 	}
 

@@ -1,3 +1,7 @@
 my_route:
     path: /
     defaults: { _controller: testMyBundle:Advert:index }
+
+my_2_route:
+    path: /{nom}
+    defaults: { _controller: testMyBundle:Advert:hello }
