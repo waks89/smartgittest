@@ -6,7 +6,7 @@
 	
 	class AdvertController extends Controller {
 		public function indexAction() {
-			$content = $this->get('templating')->render("testMyBundle:Advert:index.html.twig");
+			$content = $this->render("testMyBundle:Advert:index.html.twig");
 			return new Response($content);
 		}
 	}
